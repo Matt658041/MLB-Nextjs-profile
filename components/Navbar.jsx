@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
     return (
@@ -26,7 +27,15 @@ const Navbar = () => {
                     <li className=' ml-10 text-lg uppercase hover:border-b'>Contact</li>
                 </Link>
             </ul>
+            <div className='md:hidden'> 
+                 <AiOutlineMenu size={25}/>       
+            </div>
          </div>
+      </div>
+        <div className='fixed left-0 top-0 w-full h-screen bg-black/60 '>
+            <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%]'>
+
+            </div>
         </div>
     </div>
     
