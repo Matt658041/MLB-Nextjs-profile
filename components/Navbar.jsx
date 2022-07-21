@@ -33,7 +33,18 @@ const Navbar = () => {
          </div>
       </div>
         <div className='fixed left-0 top-0 w-full h-screen bg-black/60 '>
-            <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%]'>
+            <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#86a2b8] p-10 ease-in duration-500'>
+                <div>
+                <div className= 'flex w-full items-center justify-between'>
+                    <Image scr='/../public/assets/projects/03e3aa07-4c87-4920-8e33-bb768cf58c53.jpg' width='87' height='35' alt='/'/>
+                    <div className='rounded-full shadow-lg shadow-gray-400 cursor-pointer'>
+                        <AiOutlineClose/>
+                    </div>
+               </div>
+               <div>
+                    <p>Teamwork makes the dreamwork!</p>
+               </div>
+            </div>
 
             </div>
         </div>
