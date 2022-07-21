@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+import { FalinkedinIn} from 'react-icons/fa'
 
 const Navbar = () => {
     return (
@@ -45,8 +46,8 @@ const Navbar = () => {
                     <p className='w-[85%] md:w-[90%] py-4'>Teamwork makes the dreamwork!</p>
                </div>
             </div>
-        <div>   
-            <ul>
+        <div className='py-4 flex flex-col'>   
+            <ul className='uppercase'>
                 <Link href='/'>
                 <li className='py-4 text-sm'>Home</li>
                 </Link>
@@ -63,6 +64,14 @@ const Navbar = () => {
                 <li className='py-4 text-sm'>Contact</li>
                 </Link>
             </ul>
+            <div className='pt-40 '>
+            <p className='uppercase tracking-widest text-cyan-200'>Connect</p>
+            <div>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <FalinkedinIn/>
+                </div>
+            </div>
+            </div>
         </div>
        </div>
      </div>
