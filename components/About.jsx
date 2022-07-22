@@ -14,7 +14,7 @@ const About = () => {
             <p>Check out some of my latest projects.</p>
             </div>
             <div>
-                <Image src= '/../public/assets/projects/github-profile.jpg' alt= ''/>
+                <Image src= '/../public/assets/projects/github-profile.jpg' alt= '/' width= '390' height='390'/>
             </div>
         </div>
     </div>
