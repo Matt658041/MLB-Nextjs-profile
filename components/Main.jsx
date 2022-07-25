@@ -10,7 +10,7 @@ const Main =() => {
             <div>
             <p className='uppercase text-sm tracking-widest text-black-600'>Teamwork makes the dreamwork!</p>
             <h1 className='py-4 text-red-700'>
-                Hi, I am <span className='text-[#d9e13d]'> Matt </span>
+                Hi, <span className='text-[#ffffff]'>I am </span><span className='text-[#3d6be1]'> Matt </span>
              </h1>
              <h1 className='py-2 text-gray-700'>
                 A Full-Stack Web Developer 
