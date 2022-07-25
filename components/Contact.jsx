@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='w-full lg:h-screen'>
+
+    </div>
   )
 }
