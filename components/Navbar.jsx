@@ -27,8 +27,10 @@ const Navbar = () => {
     return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]':'fixed w-full h-20  z-[100]' } >
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <Link href='/'>
         <Image className='rounded-lg'
          src="/../public/assets/projects/03e3aa07-4c87-4920-8e33-bb768cf58c53.jpg" alt="/"  width='70' height='80' />
+         </Link>
          <div>
             <ul className='hidden md:flex'>
                 <Link href='/'>
