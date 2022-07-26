@@ -8,14 +8,16 @@ const Main =() => {
     <div className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
-            <p className='uppercase text-sm tracking-widest text-black-600'>Teamwork makes the dreamwork!</p>
+            <p className='uppercase text-md tracking-widest text-black-600'>Teamwork makes the dreamwork!</p>
             <h1 className='py-4 text-red-700'>
                 Hi, <span className='text-[#ffffff]'>I am </span><span className='text-[#3d6be1]'> Matt </span>
              </h1>
              <h1 className='py-2 text-gray-700'>
                 A Full-Stack Web Developer 
              </h1>
-             <p className='py-4 text-gray-800 max-w-[70%] m-auto'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium tempora hic animi? Doloribus quisquam fuga alias fugit. Alias architecto sequi eligendi blanditiis voluptatibus nisi.
+             <p className='py-4 text-lg text-gray-800 max-w-[70%] m-auto'> Full Stack Designer and developer based out of Nashville, TN. I strive to be able to change and thrive in the current marketplace. I have recently earned a certificate in full stack web development from Vanderbilt University, with newly developed skills in JavaScript, CSS, HTML, Node, React.js, and responsive web design. 
+            Known as an innovative problem solver passionate about developing apps, with a focus on mobile-first  design and development. With each project, my aim is to best engage my
+            audience for an impactful user experience.
              </p>
              <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -30,7 +32,7 @@ const Main =() => {
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
             </div>
-             </div>
+            </div>
             </div>
         </div>
     </div>
