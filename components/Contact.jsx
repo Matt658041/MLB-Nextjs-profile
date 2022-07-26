@@ -1,9 +1,13 @@
 import React from 'react'
 
-export const Contact = () => {
+const Contact = () => {
   return (
-    <div className='w-full lg:h-screen'>
+    <div className=''>
+      <div className=''>
+
+      </div>
 
     </div>
   )
 }
+export default Contact
