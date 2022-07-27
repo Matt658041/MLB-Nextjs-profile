@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {AiOutlineMenu, AiOutlineClose, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import navImage from '../public/assets/projects/03e3aa07-4c87-4920-8e33-bb768cf58c53.jpg'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -29,7 +30,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
         <Image className='rounded-lg'
-         src="/../public/assets/projects/03e3aa07-4c87-4920-8e33-bb768cf58c53.jpg" alt="/"  width='70' height='80' />
+         src={navImage} alt="/"  width='70' height='80' />
          </Link>
          <div>
             <ul className='hidden md:flex'>

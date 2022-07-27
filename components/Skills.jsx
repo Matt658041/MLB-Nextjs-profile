@@ -1,5 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import html from '../public/assets/skills/html.png'
+import css from '../public/assets/skills/css-image.png'
+import js from '../public/assets/skills/js.png'
+import node from '../public/assets/skills/node.png'
+import react from '../public/assets/skills/React-icon.png'
+import tailwind from '../public/assets/skills/tailwind.png'
+import mongo from '../public/assets/skills/mongodb.png'
+import github from '../public/assets/skills/GitHub-logo.png'
 
 const Skills = () => {
     return (
@@ -13,7 +21,7 @@ const Skills = () => {
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/html.png' 
+                    <Image src={html} 
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -27,7 +35,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/css-image.png' 
+                    <Image src={css} 
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -41,7 +49,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/js.png' 
+                    <Image src={js} 
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -55,7 +63,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/node.png' 
+                    <Image src={node}
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -69,7 +77,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/React-icon.png' 
+                    <Image src={react}
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -83,7 +91,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/tailwind.png' 
+                    <Image src={tailwind}
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -97,7 +105,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/mongodb.png' 
+                    <Image src={mongo}
                      width='64px'
                      height='64px'
                      alt='/'/>
@@ -111,7 +119,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src='/../public/assets/skills/GitHub-logo.png' 
+                    <Image src={github}
                      width='64px'
                      height='64px'
                      alt='/'/>
