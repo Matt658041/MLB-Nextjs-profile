@@ -32,12 +32,12 @@ const Main =() => {
                 </Link>
             </div>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-            <Link  href='/'>
+            <Link  href='mailto:matthewboisse@gmail.com'>
                 <AiOutlineMail/>
                 </Link>
             </div>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-            <Link  href='/'>
+            <Link  href='mailto:matthewboisse@gmail.com'>
                 <BsFillPersonLinesFill />
                 </Link>
             </div>
