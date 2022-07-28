@@ -12,9 +12,9 @@ const About = () => {
 
             <p className='py-2 text-gray-800'>Recent Vanderbilt Bootcamp Graduate</p>
 
-            <p className='py-2 text-lg text-gray-800' > I enjoy a good challenge and that is why I enjoy web development so much. I have recently earned a certificate in full stack web development from Vanderbilt University, and it has given me a good foundation in which I can expand and improve upon my skills in an everchanging internet landscape. 
+            <p className='py-2 text-lg text-gray-800' > I am based out of Nashville, Tennessee. I enjoy a good challenge and that is why I love web development so much. I have recently earned a certificate in full stack web development from Vanderbilt University, and it has given me a good foundation in which I can expand and improve upon my skills in an everchanging internet landscape. 
             </p>
-            <p className='py-2 text-lg text-gray-800'>I am a team player, but can also work independently. With each project, my aim is to best engage my audience for an impactful user experience and make an excellent product.</p>
+            <p className='py-2 text-lg text-gray-800'>I am a team player, but can also work independently. With each project, my aim is to best engage my audience for an impactful user experience and make an excellent product. I also like puzzle solving and reading books.</p>
           
             </div>
             <div className='w-full h-auto m-auto shadow-xl shawow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>

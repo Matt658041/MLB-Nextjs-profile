@@ -16,9 +16,7 @@ const Main =() => {
              <h1 className='py-2 text-gray-700'>
                 A Full-Stack Web Developer 
              </h1>
-             <p className='py-4 text-lg text-gray-800 max-w-[70%] m-auto'> Full Stack Designer and developer based out of Nashville, TN. I strive to be able to change and thrive in the current marketplace. I have recently earned a certificate in full stack web development from Vanderbilt University, with newly developed skills in JavaScript, CSS, HTML, Node, React.js, and responsive web design. 
-            Known as an innovative problem solver passionate about developing apps, with a focus on mobile-first  design and development. With each project, my aim is to best engage my
-            audience for an impactful user experience.
+             <p className='py-4 text-lg text-gray-800 max-w-[70%] m-auto'> Full-Stack web developer with a bachelor’s degree in communications. Recent graduate of Vanderbilt University with a certificate in Web development.  Self-starter able to think both creatively and analytically, with a mind for patterns, spatial awareness, data crunching and puzzle solving. Known for being both a leader and a team player, with a love of collaboration and idea generation.
              </p>
              <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
