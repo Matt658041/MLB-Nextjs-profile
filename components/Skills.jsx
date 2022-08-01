@@ -5,9 +5,9 @@ import css from '../public/assets/skills/css-image.png'
 import js from '../public/assets/skills/js.png'
 import node from '../public/assets/skills/node.png'
 import react from '../public/assets/skills/React-icon.png'
-import tailwind from '../public/assets/skills/tailwind.png'
+import mySql from '../public/assets/skills/sql.png'
 import mongo from '../public/assets/skills/mongodb.png'
-import github from '../public/assets/skills/GitHub-logo.png'
+import git from '../public/assets/skills/git-png.png'
 
 const Skills = () => {
     return (
@@ -91,13 +91,13 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src={tailwind}
+                    <Image src={mySql}
                      width='64px'
                      height='64px'
                      alt='/'/>
                 </div>
                 <div className='flex flex-col items-center justify-center'>
-                    <h3>Tailwind</h3>
+                    <h3>MySql</h3>
                 </div>
             </div>
           </div>
@@ -119,13 +119,13 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
-                    <Image src={github}
+                    <Image src={git}
                      width='64px'
                      height='64px'
                      alt='/'/>
                 </div>
                 <div className='flex flex-col items-center justify-center'>
-                    <h3>Github</h3>
+                    <h3>Git</h3>
                 </div>
             </div>
           </div>
