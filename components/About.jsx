@@ -10,7 +10,7 @@ const About = () => {
       id="about"
       sx={{ width: "100%", py: 16, display: "flex", alignItems: "center" }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Grid container spacing={8}>
           <Grid item xs={12} md={8}>
             <Typography

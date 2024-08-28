@@ -69,7 +69,7 @@ function MedscanMapDash ({ modalOpen, setModalOpen }) {
             style={{ position: "absolute", top: "15", right: "15" }}
           />
           <Typography variant="h4" sx={{ textAlign: "center", py: 2 }}>
-            Medscan Dash Test History Page
+            Medscan Interact Study Map
           </Typography>
           <Image
             src={MedscanMap}

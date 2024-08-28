@@ -21,16 +21,16 @@ export default function Home() {
             alignItems: "center",
           }} // Centering components
         >
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
             <Main />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
             <About />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
             <Projects />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
             <Skills />
           </Grid>
         </Grid>

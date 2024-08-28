@@ -66,7 +66,7 @@ function MlabApp({ modalOpen, setModalOpen }) {
             style={{ position: "absolute", top: "15", right: "15" }}
           />
           <Typography variant="h4" sx={{ textAlign: "center", py: 2 }}>
-            Medscan Dash Test History Page
+            Mlab Plus mobile app
           </Typography>
           <Image
             src={Mlab}
