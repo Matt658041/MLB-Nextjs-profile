@@ -1,90 +1,175 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import propertyImg from '../public/assets/projects/pennyproject.png'
-import bookImg from '../public/assets/projects/Screenshot-for-portfolio.png'
-import beerImg from '../public/assets/projects/Screenshot-for-first-prjt.png'
-import expImg from '../public/assets/projects/Expense Tracker.png'
-import MedscanMap from "../public/assets/projects/Medscan Map screen shot.png"
-import MedscanTest from "../public/assets/projects/Medscan test history screen shot.png"
-import MobileImage from "../public/assets/projects/Screenshot 2023-05-12 104708.png"
+import React, { useState } from "react";
+import { Box, Button, MobileStepper, Typography } from "@mui/material";
+import Image from "next/image";
+import MedscanMapDash from "./MedscanMapDash";
+import MedscanAppModal from "./MedscanAppModal";
+import MlabApp from "./MlabApp";
+import MedscanDashModal from "./MedscanDashModal";
+import MedscanMap from "../public/assets/projects/Medscan Map screen shot.png";
+import Mlab from "../public/assets/projects/mlab screen shot.png";
+import MobileImage from "../public/assets/projects/Screenshot 2023-05-12 104708.png";
+import MedscanTest from "../public/assets/projects/Medscan test history screen shot.png";
 
+const steps = [
+  {
+    label: "Medscan Map",
+    component: (
+      <Box sx={{ position: "relative", display: "inline-block" }}>
+        <Image src={MedscanMap} alt="Medscan Map" width={400} height={400} />
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            padding: "10px",
+            borderRadius: "5px",
+            textAlign: "center",
+            pointerEvents: "none",
+          }}
+        >
+          Click to expand
+        </Box>
+      </Box>
+    ),
+    modal: MedscanMapDash,
+  },
+  {
+    label: "Medscan Mobile App",
+    component: (
+      <Box sx={{ position: "relative", display: "inline-block" }}>
+        <Image
+          src={MobileImage}
+          alt="Medscan Mobile App"
+          width={400}
+          height={400}
+        />
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            padding: "10px",
+            borderRadius: "5px",
+            textAlign: "center",
+            pointerEvents: "none",
+          }}
+        >
+          Click to expand
+        </Box>
+      </Box>
+    ),
+    modal: MedscanAppModal,
+  },
+  {
+    label: "Mlab App",
+    component: (
+      <Box sx={{ position: "relative", display: "inline-block" }}>
+        <Image src={Mlab} alt="Mlab App" width={400} height={400} />
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            padding: "10px",
+            borderRadius: "5px",
+            textAlign: "center",
+            pointerEvents: "none",
+          }}
+        >
+          Click to expand
+        </Box>
+      </Box>
+    ),
+    modal: MlabApp,
+  },
+  {
+    label: "Medscan Dash",
+    component: (
+      <Box sx={{ position: "relative", display: "inline-block" }}>
+        <Image src={MedscanTest} alt="Medscan Dash" width={400} height={400} />
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            padding: "10px",
+            borderRadius: "5px",
+            textAlign: "center",
+            pointerEvents: "none",
+          }}
+        >
+          Click to expand
+        </Box>
+      </Box>
+    ),
+    modal: MedscanDashModal,
+  },
+];
 
+function Projects() {
+  const [activeStep, setActiveStep] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [ModalComponent, setModalComponent] = useState(null);
 
-const Projects = () => {
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleImageClick = (ModalComponent) => {
+    setModalComponent(() => ModalComponent);
+    setModalOpen(true);
+  };
+
   return (
-    <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-black">Projects</p>
-        <h2 className="py-4">What I Have Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#d8d7ed] to-[#709dff]">
-            <Image
-              className="rounded-xl group-hover:opacity-10"
-              src={propertyImg}
-              alt="/"
-            />
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <h3 className="text-2xl text-white tracking-wider text-center">
-                E-Commerce site
-              </h3>
-              <p className="pb-4 pt-2 text-white text-center">
-                React MongoDB Apollo Axios
-              </p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#d8d7ed] to-[#709dff]">
-            <Image
-              className="rounded-xl group-hover:opacity-10"
-              src={MobileImage}
-              height={600}
-              alt="/"
-            />
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <h3 className="text-2xl text-white tracking-wider text-center">
-                Medscan Mobile App
-              </h3>
-              <p className="pb-4 pt-2 text-white text-center">
-                React Native, React Native Navigation, Expo Go, React Native
-                Maps, React Native Paper, AWS Amplify, HTML, CSS, Formik,
-                Javascript.
-              </p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#d8d7ed] to-[#709dff]">
-            <Image
-              className="rounded-xl group-hover:opacity-10"
-              src={MedscanMap}
-              alt="/"
-            />
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <h3 className="text-2xl text-white tracking-wider text-center">
-                Medscan Map Screen
-              </h3>
-              <p className="pb-4 pt-2 text-white text-center">
-                React, HTML, Material UI, React Leaflet, CSS, Javascript.
-              </p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#d8d7ed] to-[#709dff]">
-            <Image
-              className="rounded-xl group-hover:opacity-10"
-              src={MedscanTest}
-              alt="/"
-            />
-            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <h3 className="text-2xl text-white tracking-wider text-center">
-                Medscan Test History Screen
-              </h3>
-              <p className="pb-4 pt-2 text-white text-center">
-                React, HTML, Material UI, CSS, Javascript
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Box>
+      <Typography variant="h2" sx={{ py: 2 }}>
+        Projects
+      </Typography>
+      <Box onClick={() => handleImageClick(steps[activeStep].modal)}>
+        {steps[activeStep].component}
+      </Box>
+      <MobileStepper
+        variant="dots"
+        steps={steps.length}
+        position="static"
+        activeStep={activeStep}
+        sx={{ backgroundColor: "transparent" }}
+        nextButton={
+          <Button
+            size="small"
+            onClick={handleNext}
+            disabled={activeStep === steps.length - 1}
+          >
+            Next
+          </Button>
+        }
+        backButton={
+          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+            Back
+          </Button>
+        }
+      />
+      {ModalComponent && (
+        <ModalComponent modalOpen={modalOpen} setModalOpen={setModalOpen} />
+      )}
+    </Box>
   );
-};
+}
 
-export default Projects
+export default Projects;
