@@ -77,14 +77,7 @@ function MedscanDashModal({ modalOpen, setModalOpen }) {
           />
           <Typography variant="body1" sx={{ py: 2 }}>
             Designed and developed an interactive web dashboard for real-time
-            visualization of study results. Enhanced project oversight with
-            features tailored for administrators, project managers, and
-            sponsors. Incorporated a dynamic map to track disease prevalence
-            in Kenyan schools, complete with search, filters, editable pop-ups,
-            and carousels. Streamlined user experience with dedicated pages
-            for detailed school information and testing history. Implemented
-            full resource and staff audit histories to improve data interaction
-            and accessibility.
+            visualization and sorting of study results. Enhanced project so that when the user clicked on the map it naviagated to and selected the corresponing card. Incorporated mulitple filtering items to sort and select information. Also, connected to a database to store and retrieve information.
           </Typography>
         </Box>
       </Modal>
