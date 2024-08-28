@@ -57,7 +57,7 @@ function MlabApp({ modalOpen, setModalOpen }) {
       <Modal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
-        hideBackdrop={true}
+        hideBackdrop={false}
         disableAutoFocus={true}
       >
         <Box sx={style}>

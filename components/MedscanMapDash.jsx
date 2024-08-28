@@ -60,7 +60,7 @@ function MedscanMapDash ({ modalOpen, setModalOpen }) {
       <Modal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
-        hideBackdrop={true}
+        hideBackdrop={false}
         disableAutoFocus={true}
       >
         <Box sx={style}>
@@ -69,7 +69,7 @@ function MedscanMapDash ({ modalOpen, setModalOpen }) {
             style={{ position: "absolute", top: "15", right: "15" }}
           />
           <Typography variant="h4" sx={{ textAlign: "center", py: 2 }}>
-            Medscan Interact Study Map
+            Medscan Interactive Study Map
           </Typography>
           <Image
             src={MedscanMap}
