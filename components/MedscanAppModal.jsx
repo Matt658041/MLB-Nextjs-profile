@@ -40,7 +40,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   bgcolor: "background.paper",
- 
+  borderRadius: "3px",
   border: "1px solid #0f172a",
   padding: "15px",
   width: "75vw", // 75% of the viewport width
