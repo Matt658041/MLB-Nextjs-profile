@@ -63,7 +63,7 @@ function MedscanDashModal({ modalOpen, setModalOpen }) {
         <Box sx={style}>
           <HighlightOff
             onClick={() => setModalOpen(false)}
-            style={{ position: "absolute", top: "0", right: "0" }}
+            style={{ position: "absolute", top: "15", right: "15" }}
           />
           <Typography variant="h4" sx={{ textAlign: "center", py: 2 }}>
             Medscan Dash Test History Page
@@ -71,18 +71,18 @@ function MedscanDashModal({ modalOpen, setModalOpen }) {
           <Image
             src={MedscanTest}
             alt="Medscan Mobile App"
-            width={600}
+            width={950}
             height={600}
          
           />
           <Typography variant="body1" sx={{ py: 2 }}>
             Designed and developed an interactive web dashboard for real-time
-            visualization of study results. • Enhanced project oversight with
+            visualization of study results. Enhanced project oversight with
             features tailored for administrators, project managers, and
             sponsors. Incorporated a dynamic map to track disease prevalence
             in Kenyan schools, complete with search, filters, editable pop-ups,
             and carousels. Streamlined user experience with dedicated pages
-            for detailed school information and testing history. • Implemented
+            for detailed school information and testing history. Implemented
             full resource and staff audit histories to improve data interaction
             and accessibility.
           </Typography>

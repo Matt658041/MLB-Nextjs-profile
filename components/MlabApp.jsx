@@ -63,7 +63,7 @@ function MlabApp({ modalOpen, setModalOpen }) {
         <Box sx={style}>
           <HighlightOff
             onClick={() => setModalOpen(false)}
-            style={{ position: "absolute", top: "0", right: "0" }}
+            style={{ position: "absolute", top: "15", right: "15" }}
           />
           <Typography variant="h4" sx={{ textAlign: "center", py: 2 }}>
             Medscan Dash Test History Page
@@ -71,7 +71,7 @@ function MlabApp({ modalOpen, setModalOpen }) {
           <Image
             src={Mlab}
             alt="Medscan Mobile App"
-            width={600}
+            width={900}
             height={600}
            
           />

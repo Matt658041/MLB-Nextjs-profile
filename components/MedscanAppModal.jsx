@@ -63,7 +63,7 @@ function MedscanAppModal({ modalOpen, setModalOpen }) {
           <Box sx={style}>
             <HighlightOff
               onClick={() => setModalOpen(false)}
-              style={{ position: "absolute", top: "0", right: "0" }}
+              style={{ position: "absolute", top: "15", right: "15" }}
             />
             <Typography variant="h4" sx={{ textAlign: "center", py: 2 }}>
               Medscan Mobile App
@@ -71,7 +71,7 @@ function MedscanAppModal({ modalOpen, setModalOpen }) {
             <Image
               src={MobileImage}
               alt="Medscan Mobile App"
-              width={600}
+              width={800}
               height={600}
            
             />

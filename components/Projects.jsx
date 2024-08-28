@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Box, Button, MobileStepper, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  MobileStepper,
+  Typography,
+  Container,
+  Paper,
+} from "@mui/material";
 import Image from "next/image";
 import MedscanMapDash from "./MedscanMapDash";
 import MedscanAppModal from "./MedscanAppModal";
@@ -9,6 +16,7 @@ import MedscanMap from "../public/assets/projects/Medscan Map screen shot.png";
 import Mlab from "../public/assets/projects/mlab screen shot.png";
 import MobileImage from "../public/assets/projects/Screenshot 2023-05-12 104708.png";
 import MedscanTest from "../public/assets/projects/Medscan test history screen shot.png";
+import Grid from "@mui/material/Grid2";
 
 const steps = [
   {
@@ -137,37 +145,55 @@ function Projects() {
   };
 
   return (
-    <Box>
-      <Typography variant="h2" sx={{ py: 2 }}>
-        Projects
-      </Typography>
-      <Box onClick={() => handleImageClick(steps[activeStep].modal)}>
-        {steps[activeStep].component}
-      </Box>
-      <MobileStepper
-        variant="dots"
-        steps={steps.length}
-        position="static"
-        activeStep={activeStep}
-        sx={{ backgroundColor: "transparent" }}
-        nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === steps.length - 1}
+    <Box sx={{ width: "100%", py: 16 }}>
+      <Container maxWidth="xxl">
+        <Typography variant="h2" sx={{ py: 2 }}>
+          Projects
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            mb: 2,
+          }}
+        >
+          <Box
+            onClick={() => handleImageClick(steps[activeStep].modal)}
+            sx={{ mb: 2 }}
           >
-            Next
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            Back
-          </Button>
-        }
-      />
-      {ModalComponent && (
-        <ModalComponent modalOpen={modalOpen} setModalOpen={setModalOpen} />
-      )}
+            {steps[activeStep].component}
+          </Box>
+          <MobileStepper
+            variant="dots"
+            steps={steps.length}
+            position="static"
+            activeStep={activeStep}
+            sx={{ backgroundColor: "transparent", mt: 2 }}
+            nextButton={
+              <Button
+                size="small"
+                onClick={handleNext}
+                disabled={activeStep === steps.length - 1}
+              >
+                Next
+              </Button>
+            }
+            backButton={
+              <Button
+                size="small"
+                onClick={handleBack}
+                disabled={activeStep === 0}
+              >
+                Back
+              </Button>
+            }
+          />
+        </Box>
+        {ModalComponent && (
+          <ModalComponent modalOpen={modalOpen} setModalOpen={setModalOpen} />
+        )}
+      </Container>
     </Box>
   );
 }
