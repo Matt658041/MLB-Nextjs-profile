@@ -17,6 +17,7 @@ import HighlightOff from "@mui/icons-material/HighlightOff";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Image from "next/image";
 import MobileImage from "../public/assets/projects/Screenshot 2023-05-12 104708.png";
+import MedscanDrawerScreen from "../public/assets/projects/Screenshot 2024-08-29 081935.png";
 
 const ModalStyleTheme = createTheme({
   palette: {
@@ -69,7 +70,7 @@ function MedscanAppModal({ modalOpen, setModalOpen }) {
               Medscan Mobile App
             </Typography>
             <Image
-              src={MobileImage}
+              src={MedscanDrawerScreen}
               alt="Medscan Mobile App"
               width={800}
               height={600}
