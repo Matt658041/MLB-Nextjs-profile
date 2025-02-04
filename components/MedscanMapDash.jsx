@@ -63,7 +63,7 @@ function MedscanMapDash ({ modalOpen, setModalOpen }) {
         hideBackdrop={false}
         disableAutoFocus={true}
       >
-        <Box sx={style}>
+        <Box sx={{ height: "500px", overflowY: "auto", position: "relative" }}>
           <HighlightOff
             onClick={() => setModalOpen(false)}
             style={{ position: "absolute", top: "15", right: "15" }}
@@ -76,18 +76,17 @@ function MedscanMapDash ({ modalOpen, setModalOpen }) {
             alt="Medscan Mobile App"
             width={950}
             height={600}
-          
           />
           <Typography variant="body1" sx={{ py: 2 }}>
             Designed and developed an interactive map for real-time
             visualization of study results. Enhanced project oversight with
             features tailored for administrators, project managers, and
-            sponsors. Incorporated a dynamic map to track disease prevalence
-            in Kenyan schools, complete with search, filters, editable pop-ups,
-            and carousels. Streamlined user experience with dedicated pages
-            for detailed school information and testing history. Implemented
-            full resource and staff audit histories to improve data interaction
-            and accessibility.
+            sponsors. Incorporated a dynamic map to track disease prevalence in
+            Kenyan schools, complete with search, filters, editable pop-ups, and
+            carousels. Streamlined user experience with dedicated pages for
+            detailed school information and testing history. Implemented full
+            resource and staff audit histories to improve data interaction and
+            accessibility.
           </Typography>
         </Box>
       </Modal>

@@ -60,7 +60,7 @@ function MedscanDashModal({ modalOpen, setModalOpen }) {
         hideBackdrop={false}
         disableAutoFocus={true}
       >
-        <Box sx={style}>
+        <Box sx={{ height: "500px", overflowY: "auto", position: "relative" }}>
           <HighlightOff
             onClick={() => setModalOpen(false)}
             style={{ position: "absolute", top: "15", right: "15" }}
@@ -73,11 +73,14 @@ function MedscanDashModal({ modalOpen, setModalOpen }) {
             alt="Medscan Mobile App"
             width={950}
             height={600}
-         
           />
           <Typography variant="body1" sx={{ py: 2 }}>
             Designed and developed an interactive web dashboard for real-time
-            visualization and sorting of study results. Enhanced project so that when the user clicked on the map it navigated to and selected the corresponing card. Incorporated mulitple filtering items to sort and select information. Also, connected to a database to store and retrieve information.
+            visualization and sorting of study results. Enhanced project so that
+            when the user clicked on the map it navigated to and selected the
+            corresponing card. Incorporated mulitple filtering items to sort and
+            select information. Also, connected to a database to store and
+            retrieve information.
           </Typography>
         </Box>
       </Modal>
