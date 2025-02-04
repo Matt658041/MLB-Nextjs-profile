@@ -61,6 +61,8 @@ function MedscanDashModal({ modalOpen, setModalOpen }) {
         disableAutoFocus={true}
       >
         <Box sx={{ height: "500px", overflowY: "auto", position: "relative" }}>
+
+      
           <HighlightOff
             onClick={() => setModalOpen(false)}
             style={{ position: "absolute", top: "15", right: "15" }}
