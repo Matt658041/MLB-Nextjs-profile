@@ -145,6 +145,7 @@ function Projects() {
   };
 
   return (
+    
     <Box sx={{ width: "100%"}}>
       <Container maxWidth="xxl">
         <Typography variant="h2" sx={{ py: 2 }}>
@@ -156,6 +157,7 @@ function Projects() {
             flexDirection: "column",
             alignItems: "center",
             mb: 2,
+
           }}
         >
           <Box
@@ -163,7 +165,7 @@ function Projects() {
             sx={{ mb: 2 }}
           >
             {steps[activeStep].component}
-            
+
           </Box>
           <MobileStepper
             variant="dots"
