@@ -197,6 +197,8 @@ function Projects() {
         {ModalComponent && (
           <ModalComponent modalOpen={modalOpen} setModalOpen={setModalOpen} />
         )}
+
+        
       </Container>
     </Box>
   );
