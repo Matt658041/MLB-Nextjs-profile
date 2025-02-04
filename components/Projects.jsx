@@ -145,8 +145,9 @@ function Projects() {
   };
 
   return (
-    
-    <Box sx={{ width: "100%"}}>
+
+    <Box sx={{ width: "100%" }}>
+      
       <Container maxWidth="xxl">
         <Typography variant="h2" sx={{ py: 2 }}>
           Projects
