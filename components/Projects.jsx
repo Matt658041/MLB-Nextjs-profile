@@ -163,6 +163,7 @@ function Projects() {
             sx={{ mb: 2 }}
           >
             {steps[activeStep].component}
+            
           </Box>
           <MobileStepper
             variant="dots"
